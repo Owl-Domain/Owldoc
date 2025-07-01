@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "local", "local", "{BB47A2B4-6749-430A-B024-9E913F719501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "local\Playground\Playground.csproj", "{60462C01-619E-473B-82AD-C0A37CB7B513}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{C841F5C2-8F30-5BE9-ECA6-260644CF6F9F}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitattributes = ..\.gitattributes
+		..\.gitignore = ..\.gitignore
+		..\contributing.md = ..\contributing.md
+		..\license.md = ..\license.md
+		..\playground_fix.sh = ..\playground_fix.sh
+		..\readme.md = ..\readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{218B6F35-38A8-8894-4A45-A70D6B0063B3}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\build.yml = ..\.github\workflows\build.yml
+		..\.github\workflows\test.yml = ..\.github\workflows\test.yml
+		..\.github\workflows\update_editorconfig.yml = ..\.github\workflows\update_editorconfig.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60462C01-619E-473B-82AD-C0A37CB7B513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60462C01-619E-473B-82AD-C0A37CB7B513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60462C01-619E-473B-82AD-C0A37CB7B513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60462C01-619E-473B-82AD-C0A37CB7B513}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{60462C01-619E-473B-82AD-C0A37CB7B513} = {BB47A2B4-6749-430A-B024-9E913F719501}
+	EndGlobalSection
+EndGlobal
