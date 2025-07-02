@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Project -->
+	<PropertyGroup Label="project">
+		<TargetFrameworks>netstandard2.1</TargetFrameworks>
+		<LangVersion>13</LangVersion>
+		<Nullable>enable</Nullable>
+
+		<AssemblyName>OwlDomain.OwlDoc.Format</AssemblyName>
+		<RootNamespace>OwlDomain.OwlDoc.Format</RootNamespace>
+
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Deterministic>true</Deterministic>
+	</PropertyGroup>
+
+	<!-- NuGet package -->
+	<PropertyGroup Label="nuget">
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+		<Authors>OwlDomain</Authors>
+		<Copyright>Copyright (c) OwlDomain $([System.DateTime]::UtcNow.Year)</Copyright>
+
+		<ProjectUrl>https://www.github.com/Owl-Domain/OwlDoc</ProjectUrl>
+		<RepositoryUrl>https://github.com/Owl-Domain/OwlDoc.git</RepositoryUrl>
+
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseFile>license.txt</PackageLicenseFile>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/meta/release-notes.txt"))</PackageReleaseNotes>
+
+		<Description>A package that contains the OwlDoc intermediate file format.</Description>
+		<PackageTags>owldomain, owldoc, documentation, api, wiki, guides</PackageTags>
+	</PropertyGroup>
+
+	<!-- Package files -->
+	<ItemGroup Label="content">
+		<None Pack="true" PackagePath="" Include="../../icon.png" Link="meta/icon.png" />
+		<None Pack="true" PackagePath="" Include="../../license.txt" Link="meta/license.txt" />
+		<None Pack="true" PackagePath="" Include="meta/readme.md" />
+	</ItemGroup>
+
+	<!-- Continuous integration -->
+	<PropertyGroup Label="ci">
+		<ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
+	</PropertyGroup>
+
+</Project>

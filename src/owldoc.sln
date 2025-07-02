@@ -24,6 +24,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		..\.github\workflows\update_editorconfig.yml = ..\.github\workflows\update_editorconfig.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "format", "format", "{8E32D804-D9D1-FB1C-45F6-76EDCC07486B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Format", "format\Format\Format.csproj", "{BBA97F07-459B-4B32-A37A-22870F683D20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,11 +38,16 @@ Global
 		{60462C01-619E-473B-82AD-C0A37CB7B513}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60462C01-619E-473B-82AD-C0A37CB7B513}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60462C01-619E-473B-82AD-C0A37CB7B513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBA97F07-459B-4B32-A37A-22870F683D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA97F07-459B-4B32-A37A-22870F683D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA97F07-459B-4B32-A37A-22870F683D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA97F07-459B-4B32-A37A-22870F683D20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{60462C01-619E-473B-82AD-C0A37CB7B513} = {BB47A2B4-6749-430A-B024-9E913F719501}
+		{BBA97F07-459B-4B32-A37A-22870F683D20} = {8E32D804-D9D1-FB1C-45F6-76EDCC07486B}
 	EndGlobalSection
 EndGlobal
