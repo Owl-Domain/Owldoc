@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -27,6 +27,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "format", "format", "{8E32D804-D9D1-FB1C-45F6-76EDCC07486B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Format", "format\Format\Format.csproj", "{BBA97F07-459B-4B32-A37A-22870F683D20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "planning", "planning", "{B26AD74D-15DF-7405-F067-12594A4A0E72}"
+	ProjectSection(SolutionItems) = preProject
+		..\planning\overview.md = ..\planning\overview.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
